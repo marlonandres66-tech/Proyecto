@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F4F3;
+} 
+.contenedor {
+    width: 800px;  
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.formulario {
+    width: 100%;
+    overflow: hidden;
+}
+.formulario form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in;
+}
+.formulario form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.redes-sociales {
+    font-size: 18px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.redes-sociales ion-icon {
+    border: 1px solid #dfe2e4;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+.formulario span {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+}
+ .input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+ }
+ .formulario a {
+    color: #000000;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+ }
+.btn {
+    width: 170px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3AB397;
+    color: #FFFFFF;
+}
+/*animacion*/
+.registro {
+    transform: translateX(-100%);
+}
+.contenedor.toggle .inicio  {
+    transform: translateX(100%);
+}
+.contenedor.toggle .registro {
+    transform: translateX(0);
+}
+
+/*Bienvenida*/
+.bienvenida {
+    background-color: #3AB397;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    border-radius: 50% 0 0 50%;
+    overflow: hidden;
+}
+.contenedor.toggle .bienvenida {
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #3AA8AD;
+}
+.bienvenida .bienvenido {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    color: #FFFFFF;
+    transition: transform 0.5s ease-in-out;
+}
+.bienvenido-inicio {
+    transform: translateX(100%);
+}
+.bienvenida h3 {
+    font-size: 40px;
+}
+.bienvenida p {
+    font-size: 14px;
+    text-align: center;
+}
+.bienvenida .btn {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
+.contenedor.toggle .bienvenido-inicio {
+    transform: translateX(0);
+}
+.contenedor.toggle .bienvenido-registro {
+    transform: translateX(-100%);
+}
