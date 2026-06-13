@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F0F4F3;
+    background-color: #daf1ff;
 } 
 .contenedor {
     width: 800px;  
@@ -21,7 +21,8 @@ body {
     background-color: #FFFFFF;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 25px rgba(1, 204, 255, 0.3);
+    border: 1px solid #0b0354;
 }
 .formulario {
     width: 100%;
@@ -87,8 +88,9 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    background-color: #3AB397;
+    background: linear-gradient(135deg, #00F2FE, #0b0354);
     color: #FFFFFF;
+    border: 1px solid #0b0354;
 }
 /*animacion*/
 .registro {
@@ -103,7 +105,8 @@ body {
 
 /*Bienvenida*/
 .bienvenida {
-    background-color: #3AB397;
+    background: linear-gradient(135deg, #00F2FE, #0b0354);
+    border: 1px solid #0b0354;
     position: absolute;
     width: 50%;
     height: 100%;
@@ -117,7 +120,7 @@ body {
 .contenedor.toggle .bienvenida {
     transform: translateX(0);
     border-radius: 0 50% 50% 0;
-    background-color: #3AA8AD;
+    background: linear-gradient(135deg, #00F2FE, #0b0354);
 }
 .bienvenida .bienvenido {
     position: absolute;
