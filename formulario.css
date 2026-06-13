@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #daf1ff;
+}
+.postulacion {
+    width: 400px;
+    background: #0b0354;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 25px rgba(1, 204, 255, 0.3);
+}
+
+.postulacion h2 {
+    font-size: 25px;
+    margin-bottom: 20px; 
+    text-align: center;
+    color: #ffffff;
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    font-size: 15px;
+}
+
+.postulacion p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button {
+    width: 100%;
+    background: #0bc5fd;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border: 1px solid #0b0354;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:hover {
+    background: #0bc5fd;
+    box-shadow: 10px 10px 25px rgba(1, 204, 255, 0.3);
+}
